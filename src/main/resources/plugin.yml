@@ -1,8 +1,33 @@
-name: KotlinPluginTemplate
-main: org.simplemc.plugintemplate.KotlinPluginTemplate
+name: DtjaMCServerPlugin
+main: xyz.helloyunho.dtja_mcserver_plugin.DtjaMCServerPlugin
 version: "${version}"
 api-version: "${apiVersion}"
-website: https://github.com/SimpleMC/mc-kotlin-plugin-template
-author: tajobe
+website: https://github.com/Helloyunho/dtja-mcserver-plugin
+author: Helloyunho
 libraries:
   - org.jetbrains.kotlin:kotlin-stdlib-jdk8:${kotlinVersion}
+commands:
+  sethome:
+    description: Set home
+    usage: /<command> [name]
+    permission: dtja_mcserver_plugin.sethome
+  home:
+    description: Go to home
+    usage: /<command> [name]
+    permission: dtja_mcserver_plugin.home
+  nick:
+    description: Set nickname
+    usage: /<command> [nickname]
+    permission: dtja_mcserver_plugin.nick
+  back:
+    description: Go back to previous location
+    usage: /<command>
+    permission: dtja_mcserver_plugin.back
+  homelist:
+    description: List homes
+    usage: /<command>
+    permission: dtja_mcserver_plugin.homelist
+  delhome:
+    description: Delete home
+    usage: /<command> [name]
+    permission: dtja_mcserver_plugin.delhome

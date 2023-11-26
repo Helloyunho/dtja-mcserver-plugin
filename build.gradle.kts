@@ -19,10 +19,10 @@ plugins {
     kotlin("jvm")
     id("com.github.johnrengelman.shadow") version "8.0.0"
     id("pl.allegro.tech.build.axion-release") version "1.14.4"
-    id("org.jlleitschuh.gradle.ktlint") version "11.2.0"
+//    id("org.jlleitschuh.gradle.ktlint") version "11.2.0"
 }
 
-group = "org.simplemc"
+group = "xyz.helloyunho"
 version = scmVersion.version
 
 val mcApiVersion: String by project
@@ -60,7 +60,7 @@ fun currentDateString() = OffsetDateTime.now(ZoneOffset.UTC).toLocalDate().forma
 
 java {
     toolchain {
-        languageVersion.set(JavaLanguageVersion.of(17))
+        languageVersion.set(JavaLanguageVersion.of(19))
     }
 }
 
